@@ -1,0 +1,27 @@
+Język SQL - Zamiana Struktury Tabeli
+polega na :
+- dodaniu kolumny
+- usunięciu kolumny,
+-dodania atrybutu lub usunięcia
+Do modyfikacji struktury tabeli służy polecenie
+definicja: Alter Table nazwa_tabeli zmiana...
+
+decimal do bardzo precyzyjnych zmienno przecinkowych liczb
+
+1.Alter Table klient RENAME klienci;
+jak zmienić nazwe tabeli
+
+2.Dodawanie
+Alter Table ksiazki ADD liczba_stron varhcar(5);
+
+3.ALTER TABLE ksiazki DROP COLUMN ksiazki.liczba_stron;
+Jak dropąć tabele
+
+4.ALTER TABLE ksiazki MODIFY ksiazki.rok_wydania varchar(4) NOT NULL;
+Jak modyfikować 
+
+5.Dodawanie atrybutu
+ALTER TABLE ksiazki ADD PRIMARY KEY(id_ksiazki);
+
+6.Usuwanie atrybutu
+ALTER TABLE ksiazki DROP CONSTRAINT PRIMARY KEY;
